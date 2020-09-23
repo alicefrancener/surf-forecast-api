@@ -7,6 +7,7 @@
     "start": "yarn build && node dist/src/index.js",
     "start:dev": "ts-node-dev --transpile-only src/index.ts",
     "build": "tsc",
+    "test:functional": "jest --projects ./test --runInBand",
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,10 +31,12 @@
     "@types/jest": "^26.0.14",
     "@types/module-alias": "^2.0.0",
     "@types/node": "^14.11.1",
+    "@types/supertest": "^2.0.10",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
     "eslint": "^7.9.0",
     "jest": "^26.4.2",
+    "supertest": "^4.0.2",
     "ts-jest": "^26.4.0",
     "ts-node-dev": "^1.0.0-pre.63",
     "typescript": "^4.0.3"
