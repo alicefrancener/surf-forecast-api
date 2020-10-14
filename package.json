@@ -8,11 +8,11 @@
     "start:dev": "ts-node-dev --transpile-only src/index.ts",
     "build": "tsc",
     "test:functional": "jest --projects ./test --runInBand",
+    "test:unit": "jest",
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "style:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
-    "style:fix": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "style:fix": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\""
   },
   "repository": {
     "type": "git",
